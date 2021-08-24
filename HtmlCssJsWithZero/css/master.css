@@ -1,0 +1,80 @@
+:root {
+  --main-color: #f44336;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+/* Start Landing Page */
+.landing-page {
+  min-height: 100vh;
+  background-image: url("../images/img1.jpg");
+  background-size: cover;
+}
+.landing-page .overlay {
+  background-color: rgba(0, 0, 0, 0.75);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.landing-page .header-area {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  display: flex;
+  padding: 10px;
+}
+.landing-page .header-area .logo {
+  width: 300px;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 25px;
+}
+.landing-page .header-area .logo span {
+  color: var(--main-color);
+}
+.landing-page .header-area .links {
+  text-align: right;
+  list-style-type: none;
+  padding-right: 20px;
+  width: 100%;
+  padding-left: 0;
+  font-size: 20px;
+}
+.landing-page .header-area ul li {
+  display: inline-block;
+  margin-left: 10px;
+}
+.landing-page .header-area ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.landing-page .header-area ul li a.activ,
+.landing-page .header-area ul li a:hover {
+  color: var(--main-color);
+}
+.landing-page .introduction {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+}
+.landing-page .introduction h1 {
+  font-size: 36px;
+  margin: 0 0 12px;
+}
+.landing-page .introduction h1 span {
+  color: var(--main-color);
+}
+.landing-page .introduction p {
+  line-height: 1.6;
+  font-size: 18px;
+  margin: 0;
+}
+/* End Landing Page */
